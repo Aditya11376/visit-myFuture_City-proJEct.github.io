@@ -1,0 +1,141 @@
+:root{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    display:none;
+}
+body{
+   font-family: Arial, Helvetica, sans-serif;  
+  background-image: url(./art16.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter:opacity(10);
+   color:rgb(255, 255, 255);
+   margin: 0;
+   padding: 0;
+}
+
+/* ========================================================================================================== */
+/* navabar */
+.navbar{
+    font-size: 1.3rem;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 5px;
+    background-color: rgb(255, 255, 255);
+    border:0.1px solid rgb(214, 219, 220);
+}
+.navbar img {
+    height:64px;
+    width:250px;
+}
+.navbar a {
+    text-decoration: none;
+    padding: 20px;
+    color:rgb(65, 61, 61);
+    transition: background-color 0.2s ;
+    font-weight:bolder;
+}
+
+.navbar a:hover {
+    transform: scale(3);
+    color:#00ffa7;
+    background-color: black;
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      padding: 10px;
+    }
+    .navbar img {
+      margin-bottom: 10px;
+    }
+    .navbar a {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  }
+
+.year{
+font-size:50px;
+font-weight: 900;
+color:rgb(9, 161, 227);
+text-shadow: 2px 2px 5px rgb(7, 7, 7);
+margin:15px;
+opacity:1;
+padding-left: 10px;
+}
+
+.para p{
+  font-size: 20px;
+  width:700px;
+  height: 120px;
+ background-color: rgba(219, 217, 217, 0.5);
+ color:rgb(0, 0, 0);
+ font-family: 700;
+ border-radius: 30px;
+ margin:20px;
+ padding:10px;
+ position: relative;
+ top:280px;
+ left:20px;
+ box-shadow: 2px 2px 5px #1a1b1b;
+ border:1px solid black;
+}
+
+#learnMore
+{
+  position: relative;  top:280px; left:2vw;
+  text-decoration: none;
+  margin:20px;padding:10px;
+  color:black;
+  border-radius: 30px;  background-color: rgba(219, 217, 217, 0.5);
+  box-shadow: 2px 2px 5px #1a1b1b;
+ border:1px solid black;
+
+ &:hover{
+  background-color: #00ffa7;
+  filter:drop-shadow(0 0 10px #00ffa7);
+ }  
+}
+#left{
+  text-decoration: none;
+  font-size: 30px;
+ 
+  background-color: rgba(219, 217, 217, 0.5);
+  color: black;
+  position: relative;  top:200px; 
+  border:1px solid black;
+  border-radius: 20px;
+  padding:10px;
+  margin:5px;
+  &:hover{
+    background-color: #00ffa7;
+  filter:drop-shadow(0 0 10px #00ffa7);
+  }
+
+}
+#right{
+  text-decoration: none;
+  font-size: 30px;
+ 
+  background-color: rgba(219, 217, 217, 0.5);
+  color: black;
+  position: relative;  top:200px;  left:1385px;
+  border:1px solid black;
+  border-radius: 20px;
+  padding:10px;
+  margin:5px;
+  &:hover{
+    background-color: #00ffa7;
+  filter:drop-shadow(0 0 10px #00ffa7);
+
+  }
+
+}
